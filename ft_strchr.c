@@ -1,16 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 14:00:19 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/10 14:00:24 by mbarranq         ###   ########.fr       */
+/*   Created: 2024/09/11 15:02:31 by mbarranq          #+#    #+#             */
+/*   Updated: 2024/09/11 20:21:59 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memset(void *str, int c, size_t n)
+char *ft_strchr(const char *s, int c)
 {
+	int	i;
 
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)&s[i]);
+	return (NULL);
 }

@@ -6,11 +6,11 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:28:53 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/10 13:59:51 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/11 19:28:15 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	return (c >= 0 && c <= 9);
+	return (c >= 48 && c <= 57);
 }

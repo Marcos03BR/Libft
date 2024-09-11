@@ -1,37 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 14:02:36 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/11 19:32:50 by mbarranq         ###   ########.fr       */
+/*   Created: 2024/09/11 20:38:31 by mbarranq          #+#    #+#             */
+/*   Updated: 2024/09/11 21:16:34 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t	length;
-	size_t	i;
 	
-	length = 0;
-	i = 0;
-	while (src[length])
-	{
-		length++;
-	}
-	if (dstsize == 0)
-	{
-		return (length);
-	}
-	while (i < dstsize - 1 && src[i] != '\0')
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (length);
 }
