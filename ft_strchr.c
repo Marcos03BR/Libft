@@ -6,11 +6,13 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:02:31 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/11 20:21:59 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/12 11:38:48 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 

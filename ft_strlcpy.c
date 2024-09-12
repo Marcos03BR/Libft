@@ -6,7 +6,7 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 14:02:36 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/11 19:32:50 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/12 11:11:18 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	length;
 	size_t	i;
-	
+
 	length = 0;
 	i = 0;
 	while (src[length])

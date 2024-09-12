@@ -6,11 +6,11 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:45:44 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/10 13:59:48 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/12 11:10:58 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

@@ -6,16 +6,16 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:47:21 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/11 19:30:29 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/12 11:11:29 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	size_t i;
-	
+	size_t	i;
+
 	i = 0;
 	while (s[i])
 		i++;
