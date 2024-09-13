@@ -6,7 +6,7 @@
 /*   By: mbarranq <mbarranq@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 14:31:16 by mbarranq          #+#    #+#             */
-/*   Updated: 2024/09/12 16:28:56 by mbarranq         ###   ########.fr       */
+/*   Updated: 2024/09/13 18:21:37 by mbarranq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,11 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*tmp;
-	size_t			i;
+	void	*tmp;
 
-	i = 0;
 	tmp = malloc(count * size);
 	if (!tmp)
 		return (NULL);
-	while (i < count * size)
-		tmp[i++] = 0;
+	ft_memset(tmp, 0, count * size);
 	return (tmp);
 }
