@@ -1,24 +1,27 @@
-# Variables
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-SRC = $(wildcard ft_*.c)  # Usamos el comodín para obtener todos los archivos ft_*.c
+SRC = $(wildcard ft_*.c) 
 OBJ = $(SRC:.c=.o)
+BONUS_SRC = $(wildcard ft_lst*.c)
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
-# Reglas obligatorias
 all: $(NAME)
 
 $(NAME): $(OBJ)
-		ar rcs $(NAME) $(OBJ)
+	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+bonus: $(OBJ) $(BONUS_OBJ)
+	ar rcs $(NAME) $(BONUS_OBJ)
+
 clean:
-		rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
-		rm -f $(NAME)
+	rm -f $(NAME)
 
 re: fclean all
 
