@@ -65,7 +65,7 @@ Este proyecto consiste en recrear funciones est√°ndar de la biblioteca de C, as√
 1. **Clona el repositorio**:
 
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/Marcos03BR/Libft.git
    ```
 2. **Accede al directorio del proyecto**:
    ```bash
